@@ -1,0 +1,11 @@
+{% extends "estructura.html" %}
+{% block contenido %}
+			<article>
+				<a href="{% url 'entrada' elemento.pk %}">
+				<h3>{{ elemento.titulo }}</h3></a>
+				<time>{{ elemento.fecha }}</time>
+				<p>{{ elemento.contenido }}</p>
+
+			</article>
+
+{% endblock %}
